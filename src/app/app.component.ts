@@ -18,19 +18,22 @@ export class AppComponent implements OnInit {
   minY: number = 0;
   maxY: number = 230;
   
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService) { console.log(this.percentValue); }
 
   // получить значения уровня жидкости в процентах
-  getPercentValue(): void {
-    this.percentValue = this.indicators.map(
+  getPercentValue() {
+    this.indicators.forEach(
       (dataTower, i) => {
         let valPerTower = Math.round(dataTower.value * 100 / dataTower.maxValue);
         this.setColorLineStatus(valPerTower, i+1);
         this.setFluidLevel(valPerTower, i);
-        return `${valPerTower}%`;
+        this.percentValue.push(`${valPerTower}%`);
       }
     );
-  }
+  };
+
+  
+
   //установить линию статуса в красный цвет, если уровень жидкости 0 или больше 100%;
   setColorLineStatus(valPerTower:number, idx:number):void {
     let statusLine = document.querySelector(`.status-line-${idx}`);
