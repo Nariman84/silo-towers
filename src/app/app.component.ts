@@ -1,4 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { 
+  Component, 
+  OnInit, 
+  ViewChildren, 
+  QueryList, 
+  ElementRef, 
+  AfterViewInit, 
+  Renderer2 
+} from '@angular/core';
 import { ApiService } from './services/api.service';
 import { IIndicator } from '../model/indicator';
 
@@ -7,18 +15,24 @@ import { IIndicator } from '../model/indicator';
   templateUrl: '../assets/img/silo_towers.svg',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
 
   indicators: IIndicator[] = [];
   percentValue: string[] = [];
   y: number[] = [];
   height: number[] = [];
+  statusLineElements: any[] = [];
 
   maxHeight: number = 395;
   minY: number = 0;
   maxY: number = 230;
-  
-  constructor(private apiService: ApiService) { console.log(this.percentValue); }
+
+  constructor(
+    private apiService: ApiService,
+    private renderer: Renderer2
+  ) { }
+
+  @ViewChildren('status') statusLine: QueryList<ElementRef>
 
   // получить значения уровня жидкости в процентах
   getPercentValue() {
@@ -32,15 +46,13 @@ export class AppComponent implements OnInit {
     );
   };
 
-  
-
   //установить линию статуса в красный цвет, если уровень жидкости 0 или больше 100%;
   setColorLineStatus(valPerTower:number, idx:number):void {
-    let statusLine = document.querySelector(`.status-line-${idx}`);
-    if ((valPerTower > 100 || valPerTower <= 0) && !statusLine.classList.contains('warning')) {
-      statusLine.classList.add('warning');
+    let statusLine = this.statusLineElements[idx-1];
+    if ((valPerTower > 100 || valPerTower <= 0)) {
+      this.renderer.addClass(statusLine, 'warning');
     } else {
-      statusLine.classList.remove('warning');
+      this.renderer.removeClass(statusLine, 'warning');
     }
   }
 
@@ -66,6 +78,10 @@ export class AppComponent implements OnInit {
       return this.maxHeight;
     }
     return heightTower;
+  }
+
+  ngAfterViewInit() {
+    this.statusLine.forEach( stat => this.statusLineElements.push(stat.nativeElement));
   }
 
   ngOnInit() {

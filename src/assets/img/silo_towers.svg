@@ -1324,42 +1324,42 @@
 	<g>
 		<text transform="matrix(1 0 0 1 243.8895 190.383)" class="st7 st1179 st1181 value-tower-1">{{percentValue[0]}}</text>
 	</g>
-	<line class="st828 status-line-1" x1="234" y1="196" x2="302" y2="196"/>
+	<line #status class="st828 status-line-1" x1="234" y1="196" x2="302" y2="196"/>
 	<text transform="matrix(1 0 0 1 376.5171 138.1545)"><tspan x="0" y="0" class="st7 st1179 st1180">Уровень карналлита</tspan><tspan x="-8.8" y="15" class="st7 st1179 st1180">в силосной башне №2</tspan></text>
 	<g>
 		<text transform="matrix(1 0 0 1 413.8939 190.383)" class="st7 st1179 st1181">{{percentValue[1]}}</text>
 	</g>
-	<line class="st828 status-line-2" x1="404" y1="196" x2="472" y2="196"/>
+	<line #status class="st828 status-line-2" x1="404" y1="196" x2="472" y2="196"/>
 	<text transform="matrix(1 0 0 1 546.0046 138.1545)"><tspan x="0" y="0" class="st7 st1179 st1180">Уровень карналлита</tspan><tspan x="-8.8" y="15" class="st7 st1179 st1180">в силосной башне №3</tspan></text>
 	<g>
 		<text transform="matrix(1 0 0 1 583.3879 190.383)" class="st7 st1179 st1181">{{percentValue[2]}}</text>
 	</g>
-	<line class="st828 status-line-3" x1="573.5" y1="196" x2="641.5" y2="196"/>
+	<line #status class="st828 status-line-3" x1="573.5" y1="196" x2="641.5" y2="196"/>
 	<text transform="matrix(1 0 0 1 716.0154 138.1545)"><tspan x="0" y="0" class="st7 st1179 st1180">Уровень карналлита</tspan><tspan x="-8.8" y="15" class="st7 st1179 st1180">в силосной башне №4</tspan></text>
 	<g>
 		<text transform="matrix(1 0 0 1 753.3986 190.383)" class="st7 st1179 st1181">{{percentValue[3]}}</text>
 	</g>
-	<line class="st828 status-line-4" x1="743.5" y1="196" x2="811.5" y2="196"/>
+	<line #status class="st828 status-line-4" x1="743.5" y1="196" x2="811.5" y2="196"/>
 	<text transform="matrix(1 0 0 1 887.7532 138.1545)"><tspan x="0" y="0" class="st7 st1179 st1180">Уровень карналлита</tspan><tspan x="-8.8" y="15" class="st7 st1179 st1180">в силосной башне №5</tspan></text>
 	<g>
 		<text transform="matrix(1 0 0 1 925.1364 190.383)" class="st7 st1179 st1181">{{percentValue[4]}}</text>
 	</g>
-	<line class="st828 status-line-5" x1="915.3" y1="196" x2="983.3" y2="196"/>
+	<line #status class="st828 status-line-5" x1="915.3" y1="196" x2="983.3" y2="196"/>
 	<text transform="matrix(1 0 0 1 1057.7639 138.1545)"><tspan x="0" y="0" class="st7 st1179 st1180">Уровень карналлита</tspan><tspan x="-8.8" y="15" class="st7 st1179 st1180">в силосной башне №6</tspan></text>
 	<g>
 		<text transform="matrix(1 0 0 1 1095.1407 190.383)" class="st7 st1179 st1181">{{percentValue[5]}}</text>
 	</g>
-	<line class="st828 status-line-6" x1="1085.3" y1="196" x2="1153.3" y2="196"/>
+	<line #status class="st828 status-line-6" x1="1085.3" y1="196" x2="1153.3" y2="196"/>
 	<text transform="matrix(1 0 0 1 1227.2515 138.1545)"><tspan x="0" y="0" class="st7 st1179 st1180">Уровень карналлита</tspan><tspan x="-8.8" y="15" class="st7 st1179 st1180">в силосной башне №7</tspan></text>
 	<g>
 		<text transform="matrix(1 0 0 1 1264.6348 190.383)" class="st7 st1179 st1181">{{percentValue[6]}}</text>
 	</g>
-	<line class="st828 status-line-7" x1="1254.8" y1="196" x2="1322.8" y2="196"/>
+	<line #status class="st828 status-line-7" x1="1254.8" y1="196" x2="1322.8" y2="196"/>
 	<text transform="matrix(1 0 0 1 1397.2622 138.1545)"><tspan x="0" y="0" class="st7 st1179 st1180">Уровень карналлита</tspan><tspan x="-8.8" y="15" class="st7 st1179 st1180">в силосной башне №8</tspan></text>
 	<g>
 		<text transform="matrix(1 0 0 1 1434.6392 190.383)" class="st7 st1179 st1181">{{percentValue[7]}}</text>
 	</g>
-	<line class="st828 status-line-8" x1="1424.8" y1="196" x2="1492.8" y2="196"/>
+	<line #status class="st828 status-line-8" x1="1424.8" y1="196" x2="1492.8" y2="196"/>
 	<line class="st828" x1="234" y1="780.4" x2="302" y2="780.4"/>
 	<text transform="matrix(1 0 0 1 380.3821 741.4101)" class="st7 st1179 st1180">Масса карналлита</text>
 	<g>
